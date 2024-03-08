@@ -9,7 +9,7 @@ LoginWindow::LoginWindow(QWidget *parent)
     , ui(new Ui::LoginWindow)
 {
     ui->setupUi(this);
-    ui->error->setVisible(false);
+    ui->error->setVisible(true);
 }
 
 LoginWindow::~LoginWindow()
