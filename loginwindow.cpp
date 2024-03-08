@@ -9,7 +9,7 @@ LoginWindow::LoginWindow(QWidget *parent)
     , ui(new Ui::LoginWindow)
 {
     ui->setupUi(this);
-    ui->error->setVisible(true);
+    ui->error->setVisible(false);
 }
 
 LoginWindow::~LoginWindow()
@@ -35,14 +35,6 @@ void LoginWindow::on_login_clicked()
 
     if (SuccessfulLogin == false)
         ui->error->setVisible(true);
-}
-
-
-void LoginWindow::on_Register_clicked()
-{
-    hide();
-    RegisterWindow* registerWindow = new RegisterWindow(this);
-    registerWindow->show();
 }
 
 
