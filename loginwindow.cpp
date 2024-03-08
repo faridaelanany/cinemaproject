@@ -37,4 +37,13 @@ void LoginWindow::on_login_clicked()
         ui->error->setVisible(true);
 }
 
+void LoginWindow::on_Register_clicked()
+{
+    hide();
+    RegisterWindow* registerWindow = new RegisterWindow(this);
+    registerWindow->show();
+}
+
+
+
 
