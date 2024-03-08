@@ -23,5 +23,11 @@ WelcomeWindow::~WelcomeWindow()
     delete ui;
 }
 
+void WelcomeWindow::on_logout_clicked()
+{
+    hide();
+    LoginWindow* loginWindow = new LoginWindow(this);
+    loginWindow->show();
+}
 
 
