@@ -5,7 +5,7 @@
 
 
 
-WelcomeWindow::WelcomeWindow(QString username, int age,QWidget *parent)
+WelcomeWindow::WelcomeWindow(QString username, int age , QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::WelcomeWindow)
 {
@@ -23,10 +23,5 @@ WelcomeWindow::~WelcomeWindow()
     delete ui;
 }
 
-void WelcomeWindow::on_logout_clicked()
-{
-    hide();
-    LoginWindow* loginWindow = new LoginWindow(this);
-    loginWindow->show();
-}
+
 
